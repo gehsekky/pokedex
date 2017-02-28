@@ -1,0 +1,35 @@
+{
+  "globals": {
+
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "rules": {
+    "no-const-assign": "error",
+    "indent": ["error", 2],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "no-console": "off",
+    "react/no-danger": "off",
+    "no-alert": "error",
+    "eqeqeq": "error",
+    "eol-last": "error",
+    "no-var": "error",
+    "prefer-arrow-callback": "error"
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true,
+    "mocha": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react"
+  ]
+}

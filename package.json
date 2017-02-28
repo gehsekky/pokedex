@@ -1,0 +1,48 @@
+{
+  "name": "pokedex",
+  "version": "0.1.0",
+  "description": "an exercise in react/redux",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot --progress --colors --content-base dist/",
+    "build": "webpack --progress --colors",
+    "lint": "eslint src/**",
+    "test": ""
+  },
+  "author": "gehsekky",
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "config": "^1.21.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-hot-loader": "^1.3.1",
+    "react-redux": "^5.0.3",
+    "react-redux-form": "^1.7.0",
+    "react-router": "^3.0.2",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0",
+    "validator": "^7.0.0",
+    "whatwg-fetch": "^2.0.2"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.11.4",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.26.2",
+    "eslint": "^3.1.1",
+    "eslint-plugin-react": "^6.10.0",
+    "file-loader": "^0.10.1",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1",
+    "yarn": "^0.21.3"
+  }
+}
