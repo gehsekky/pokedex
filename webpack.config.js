@@ -19,7 +19,7 @@ module.exports = {
   devtool: 'cheap-module-eval-source-map',
   module: {
     rules: [
-      { test: /\.jsx?$/, loaders: ['react-hot-loader', 'babel-loader'], include: /src/, exclude: /node_modules/ },
+      { test: /\.jsx?$/, loaders: ['babel-loader'], include: /src/, exclude: /node_modules/ },
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
       { test: /\.css$/, loader: 'style-loader!css-loader' },
       { test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/i, loader:'file-loader'},

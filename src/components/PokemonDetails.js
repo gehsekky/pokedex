@@ -1,21 +1,22 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-require('./PokemonDetails.less')
+require('./PokemonDetails.less');
 
 class PokemonDetails extends React.Component {
   static propTypes = {
-    pokemon: React.PropTypes.object
-  }
+    pokemon: PropTypes.object
+  };
 
   render() {
     const {
       pokemon
-    } = this.props
+    } = this.props;
 
     if (!pokemon) {
       return (
         <div><p>nothing selected</p></div>
-      )
+      );
     }
 
     return (
@@ -111,8 +112,8 @@ class PokemonDetails extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default PokemonDetails
+export default PokemonDetails;

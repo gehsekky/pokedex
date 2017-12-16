@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import PokemonDetailsContainer from '../containers/PokemonDetailsContainer';
 import NavBar from './NavBar';
 import SideBar from './SideBar';
@@ -17,7 +18,7 @@ class PokeList extends React.Component {
       items,
       loadList
     } = this.props;
-    
+
     if (items.length === 0) {
       loadList();
     }

@@ -1,5 +1,4 @@
 import 'whatwg-fetch'
-const pokemonData = require('../../../resources/data/pokemon.json')
 
 export const POKELIST_SET_LOADING = 'POKELIST_SET_LOADING';
 export const POKELIST_SET_POKEMON = 'POKELIST_SET_POKEMON';
@@ -65,7 +64,7 @@ export function loadPokemon() {
   return dispatch => {
     dispatch(setLoading(true))
 
-    return fetch('http://pokeapi.co/api/v2/pokemon/?limit=1000')
+    return fetch('https://pokeapi.co/api/v2/pokemon/?limit=1000')
     .then(response => {
       if (response.status !== 200) {
         throw new Error(error.response)

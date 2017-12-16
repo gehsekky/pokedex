@@ -1,12 +1,13 @@
 'use strict';
 
 import React from 'react';
+import PropTypes from 'prop-types';
 
 require('./App.less')
 
 class App extends React.Component {
   static propTypes = {
-    children: React.PropTypes.node
+    children: PropTypes.node
   };
 
   render() {

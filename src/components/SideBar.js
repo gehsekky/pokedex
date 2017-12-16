@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 import PokeListItemContainer from '../containers/PokeListItemContainer';
 
-require('./SideBar.less')
+require('./SideBar.less');
 
 class SideBar extends React.Component {
   static propTypes = {
-    items: React.PropTypes.array
-  }
+    items: PropTypes.array
+  };
 
   render() {
     const {
@@ -25,8 +26,8 @@ class SideBar extends React.Component {
         : <p>There are no pokemon to display</p>
       }
       </div>
-    )
+    );
   }
 }
 
-export default SideBar
+export default SideBar;
