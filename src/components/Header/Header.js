@@ -2,7 +2,7 @@ import React from 'react';
 
 require('./Header.less');
 
-const image = require('../../public/img/pokedex.png');
+const image = require('../../../public/img/pokedex.png');
 
 class Header extends React.Component {
   render() {

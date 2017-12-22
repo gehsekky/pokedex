@@ -9,6 +9,11 @@ class SideBar extends React.Component {
     items: PropTypes.array
   };
 
+  shouldComponentUpdate(nextProps) {
+    if (this.props.items && this.props.items.length > 0) return false;
+    return true;
+  }
+
   render() {
     const {
       items
