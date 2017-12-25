@@ -38,7 +38,7 @@ class PokemonDetails extends React.Component {
                 <li>
                 {
                   pokemon.types.map(
-                    type => <span key={type.type.name} className="label label-default">{type.type.name}</span>
+                    type => <span key={type.type.name} className="label label-info">{type.type.name}</span>
                   )
                 }
                 </li>
