@@ -4,7 +4,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  // context: path.join(__dirname, '../'),
+  mode: 'development',
   entry: [
     'webpack/hot/only-dev-server',
     path.resolve(__dirname, 'src/index.js')
@@ -24,7 +24,7 @@ module.exports = {
     rules: [
       { test: /\.js$/, loaders: ['babel-loader'], include: /src/, exclude: /node_modules/ },
       { test: /\.css$/, loader: 'style-loader!css-loader' },
-      { test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/i, loader:'file-loader'},
+      { test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/i, use:'file-loader'},
       { test: /\.less$/, loader: 'style-loader!css-loader!less-loader' }
     ]
   },

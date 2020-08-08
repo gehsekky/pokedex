@@ -1,8 +1,7 @@
 import React from 'react';
+import logo from '../../public/img/pokedex-small.png';
 
 require('./NavBar.less');
-
-const logo = require('../../public/img/pokedex-small.png');
 
 class NavBar extends React.Component {
   render() {
