@@ -4,13 +4,16 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
+  // context: path.join(__dirname, '../'),
   entry: [
     'webpack/hot/only-dev-server',
     path.resolve(__dirname, 'src/index.js')
   ],
   devServer: {
     historyApiFallback: true,
-    hot: true
+    hot: true,
+    publicPath: '/',
+    contentBase: path.resolve(__dirname, 'dist/')
   },
   output: {
     path: path.resolve(__dirname, 'dist/'),

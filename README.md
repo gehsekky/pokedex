@@ -11,7 +11,7 @@ this is mostly an exercise in react/redux to try and introduce people to these f
 
 * clone repo
 * run `yarn install`
-* run `yarn run start`
+* run `yarn run dev`
 * open browser and go to `localhost:8080`
 
 ## TODO

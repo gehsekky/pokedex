@@ -39,25 +39,18 @@ class PokeList extends React.Component {
     } = this.props;
 
     return (
-      <div>
+      <div className="fullheightwidth">
         <NavBar />
-        <div className="pokelist-container">
-          <div className="row">
-            <div className="maximized">
-              <div className="pokelist-items-container col-lg-3 col-md-3 fixed">
-              {
-                loadingList ? <LoadingMessage /> : <SideBar items={items} />
-              }
-              </div>
-              <div className="pokelist-item-container col-lg-9 col-md-9 pull-right">
-                <div className="content">
-                {
-                  loadingDetail ? <LoadingMessage /> : <PokemonDetailsContainer />
-                }
-                </div>
-              </div>
-            </div>
-
+        <div className="row pokelist-container">
+          <div className="col-3 pokelist-items-container position-fixed">
+          {
+            loadingList ? <LoadingMessage /> : <SideBar items={items} />
+          }
+          </div>
+          <div className="col-9 pokelist-item-container offset-3">
+          {
+            loadingDetail ? <LoadingMessage /> : <PokemonDetailsContainer />
+          }
           </div>
         </div>
       </div>

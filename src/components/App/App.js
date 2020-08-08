@@ -1,10 +1,6 @@
-'use strict';
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Route } from 'react-router';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
 import PokeListContainer from '../../containers/PokeListContainer';
 import SearchContainer from '../../containers/SearchContainer';
 
@@ -17,7 +13,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div id="page" className="container-fluid">
+      <div id="page">
         { this.props.children }
 
         <Route path="/" component={PokeListContainer} />

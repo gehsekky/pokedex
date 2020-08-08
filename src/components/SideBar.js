@@ -20,7 +20,7 @@ class SideBar extends React.Component {
     } = this.props;
 
     return (
-      <div className="sidebar">
+      <div>
       {
         items
         ? items.map(item => {
